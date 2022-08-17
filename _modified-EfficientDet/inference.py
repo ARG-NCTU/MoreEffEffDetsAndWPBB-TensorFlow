@@ -474,7 +474,7 @@ class ServingDriver(object):
     }
     return self.signitures
 
-  def visualize(self, image, prediction, label_map **kwargs):
+  def visualize(self, image, prediction, label_map, **kwargs):
     """Visualize prediction on image."""
     return visualize_image_prediction(
         image,
