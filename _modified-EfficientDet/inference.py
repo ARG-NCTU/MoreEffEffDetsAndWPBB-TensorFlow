@@ -474,12 +474,12 @@ class ServingDriver(object):
     }
     return self.signitures
 
-  def visualize(self, image, prediction, **kwargs):
+  def visualize(self, image, prediction, label_map **kwargs):
     """Visualize prediction on image."""
     return visualize_image_prediction(
         image,
         prediction,
-        label_map=self.label_map,
+        label_map=label_map,
         **kwargs)
 
   def serve_files(self, image_files: List[Text]):
