@@ -145,6 +145,12 @@ PBBW = {
     2: 'plastic bottle',
 } # Added by Federico Zocco
 
+Docking = {
+    # 0: 'background',
+    1: 'Green_clone',
+    2: 'Red_clone',
+    3: 'Blue_clone',
+}
 
 def get_label_map(mapping):
   """Get label id map based on the name, filename, or dict."""
@@ -162,4 +168,4 @@ def get_label_map(mapping):
       return yaml.load(f, Loader=yaml.FullLoader)
 
   # case 3: it is a name of a predefined dataset.
-  return {'coco': coco, 'voc': voc, 'waymo': waymo, 'Trash_ICRA19': Trash_ICRA19, 'PBBW': PBBW}[mapping]
+  return {'coco': coco, 'voc': voc, 'waymo': waymo, 'Trash_ICRA19': Trash_ICRA19, 'PBBW': PBBW, 'Docking': Docking}[mapping]
