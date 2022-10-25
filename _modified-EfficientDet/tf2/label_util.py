@@ -157,6 +157,11 @@ ScanTheCode = {
     1: 'light_buoy',
 }
 
+WildLife = {
+    # 0: 'background',
+    1: 'floating_wildlife',
+}
+
 def get_label_map(mapping):
   """Get label id map based on the name, filename, or dict."""
   # case 1: if it is None or dict, just return it.
@@ -173,4 +178,4 @@ def get_label_map(mapping):
       return yaml.load(f, Loader=yaml.FullLoader)
 
   # case 3: it is a name of a predefined dataset.
-  return {'coco': coco, 'voc': voc, 'waymo': waymo, 'Trash_ICRA19': Trash_ICRA19, 'PBBW': PBBW, 'Docking': Docking, 'ScanTheCode': ScanTheCode}[mapping]
+  return {'coco': coco, 'voc': voc, 'waymo': waymo, 'Trash_ICRA19': Trash_ICRA19, 'PBBW': PBBW, 'Docking': Docking, 'ScanTheCode': ScanTheCode, 'WildLife': WildLife}[mapping]
