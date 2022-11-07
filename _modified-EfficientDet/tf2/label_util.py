@@ -162,6 +162,16 @@ WildLife = {
     1: 'floating_wildlife',
 }
 
+Semi = {
+    # 0: 'background',
+    1: 'Green_clone',
+    2: 'Red_clone',
+    3: 'Blue_clone',
+    4: 'light_buoy',
+    5: 'floating_wildlife',
+    6: 'green_token'
+}
+
 def get_label_map(mapping):
   """Get label id map based on the name, filename, or dict."""
   # case 1: if it is None or dict, just return it.
@@ -178,4 +188,4 @@ def get_label_map(mapping):
       return yaml.load(f, Loader=yaml.FullLoader)
 
   # case 3: it is a name of a predefined dataset.
-  return {'coco': coco, 'voc': voc, 'waymo': waymo, 'Trash_ICRA19': Trash_ICRA19, 'PBBW': PBBW, 'Docking': Docking, 'ScanTheCode': ScanTheCode, 'WildLife': WildLife}[mapping]
+  return {'coco': coco, 'voc': voc, 'waymo': waymo, 'Trash_ICRA19': Trash_ICRA19, 'PBBW': PBBW, 'Docking': Docking, 'ScanTheCode': ScanTheCode, 'WildLife': WildLife, 'Semi': Semi}[mapping]
