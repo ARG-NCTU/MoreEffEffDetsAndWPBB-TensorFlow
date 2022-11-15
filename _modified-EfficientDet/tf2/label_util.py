@@ -162,6 +162,13 @@ WildLife = {
     1: 'floating_wildlife',
 }
 
+Totem = {
+    # 0: 'background',
+    1: 'green_totem',
+    2: 'red_totem',
+    3: 'white_totem',
+}
+
 Semi = {
     # 0: 'background',
     1: 'Green_clone',
@@ -188,4 +195,4 @@ def get_label_map(mapping):
       return yaml.load(f, Loader=yaml.FullLoader)
 
   # case 3: it is a name of a predefined dataset.
-  return {'coco': coco, 'voc': voc, 'waymo': waymo, 'Trash_ICRA19': Trash_ICRA19, 'PBBW': PBBW, 'Docking': Docking, 'ScanTheCode': ScanTheCode, 'WildLife': WildLife, 'Semi': Semi}[mapping]
+  return {'coco': coco, 'voc': voc, 'waymo': waymo, 'Trash_ICRA19': Trash_ICRA19, 'PBBW': PBBW, 'Docking': Docking, 'ScanTheCode': ScanTheCode, 'WildLife': WildLife, 'Totem': Totem, 'Semi': Semi}[mapping]
