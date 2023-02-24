@@ -176,6 +176,15 @@ Semi = {
     3: 'Blue_clone',
     4: 'light_buoy',
     5: 'floating_wildlife',
+}
+
+Semi_final = {
+    # 0: 'background',
+    1: 'Green_clone',
+    2: 'Red_clone',
+    3: 'Blue_clone',
+    4: 'light_buoy',
+    5: 'floating_wildlife',
     6: 'green_token'
 }
 
